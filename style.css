@@ -37,15 +37,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color, #fff)
+    background-color: var(--background-color, rgb(51, 51, 51))
 }
 
 #box {
-    width: 100px;
-    height: 100px;
+    width: calc(var(--width, 100) * 1px);
+    height: calc(var(--height, 100) * 1px);
     margin: 25px;
-    background-color:var(--box-color, #FFFD70);
-
+    background-color:var(--box-color,#ffffff);
+    border-radius: .2rem;
     box-shadow: 
         calc(var(--x-position, 3) * 1px)
         calc(var(--y-position, 3) * 1px)
