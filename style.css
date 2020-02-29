@@ -7,7 +7,7 @@
 body {
     margin: 0;
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     font-family: 'Spartan' ;
 
 }
@@ -43,6 +43,8 @@ body {
 #box {
     width: calc(var(--width, 100) * 1px);
     height: calc(var(--height, 100) * 1px);
+    max-height: 500px;
+    max-width: 500px;
     margin: 25px;
     background-color:var(--box-color,#ffffff);
     border-radius: .2rem;
@@ -51,7 +53,8 @@ body {
         calc(var(--y-position, 3) * 1px)
         calc(var(--blur, 5) * 1px)
         calc(var(--spread, 6) * 1px)
-        var(--shadow-color, #000 )
+        var(--shadow-color, #000 );
+    transition: .4s ease;
 }
 
 input:not([type="color"]) {
