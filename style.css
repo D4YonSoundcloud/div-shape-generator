@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: .5rem 1rem;
-    background-color: #222;
+    background-color: rgb(112, 126, 252);
     color: white;
 }
 
@@ -30,7 +30,7 @@ body {
 
 .divider {
     margin: 1rem -1rem .4rem -1rem;
-    border-bottom: 1px solid #999
+    border-bottom: 1px solid rgb(255, 255, 255)
 }
 .container {
     flex-grow: 1;
@@ -72,4 +72,8 @@ input[type="color"] {
     background-color: white;
     border: none;
     cursor: pointer;
+}
+
+.created-by {
+    margin-top: auto;
 }
