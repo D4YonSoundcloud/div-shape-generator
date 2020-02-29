@@ -1,10 +1,11 @@
 document.querySelectorAll('input').forEach(input => {
-    input.addEventListener('input', inputChanged)
-})
+  input.addEventListener('input', inputChanged);
+});
 
-inputChanged = e => {
-    document.documentElement.style.setProperty(
-        `--${e.target.name}`,
-        e.target.value
-    )
-}
+function inputChanged(e) {
+  console.log("it worked");
+  document.documentElement.style.setProperty(
+    `--${e.target.name}`,
+    e.target.value
+  );
+};
