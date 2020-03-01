@@ -57,6 +57,18 @@ body {
     transition: .4s ease;
 }
 
+#submit {
+    background: white;
+    border: 1px solid rgb(86, 86, 196);
+    color: rgb(36, 100, 248);
+    font-family: 'Spartan' ;
+    height: 2.5rem;
+    width: 40%;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 0.4rem;
+}
+
 input:not([type="color"]) {
     padding: .25em .5em;
     font-family: inherit;
