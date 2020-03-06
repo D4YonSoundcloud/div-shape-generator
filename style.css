@@ -47,7 +47,11 @@ body {
     max-width: 500px;
     margin: 25px;
     background-color:var(--box-color,#ffffff);
-    border-radius: .2rem;
+    border-radius: 
+    calc(var(--top-left, 10) * 1px)
+    calc(var(--top-right, 10) * 1px) 
+    calc(var(--bottom-right, 10) * 1px)
+    calc(var(--bottom-left, 10) * 1px);
     box-shadow: 
         calc(var(--x-position, 3) * 1px)
         calc(var(--y-position, 3) * 1px)
