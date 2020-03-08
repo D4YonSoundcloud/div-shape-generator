@@ -1,0 +1,22 @@
+{
+  "name": "box-shadow-maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/script.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D4YonSoundcloud/div-shape-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://D4YonSoundcloud.github.io/div-shape-generator",
+  "bugs": {
+    "url": "https://github.com/D4YonSoundcloud/box-shadow-generator/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
