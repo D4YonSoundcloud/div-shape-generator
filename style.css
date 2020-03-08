@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+:root { --box-color: #ffffff;}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    font-family: 'Spartan' ;
+
+}
+
+.sidebar {
+    min-width: 110px;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    background-color: rgb(112, 126, 252);
+    color: white;
+}
+
+.sidebar label {
+    margin-top: .75rem;
+    margin-bottom: .15rem;
+    font-weight: bold;
+}
+
+.divider {
+    margin: 1rem -1rem .4rem -1rem;
+    border-bottom: 1px solid rgb(255, 255, 255)
+}
+.container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color, rgb(51, 51, 51))
+}
+
+#box {
+    width: calc(var(--width, 100) * 1px);
+    height: calc(var(--height, 100) * 1px);
+    max-height: 1000px;
+    max-width: 1000px;
+    margin: 25px;
+    background-color:var(--box-color,#ffffff);
+    border-radius: 
+    calc(var(--top-left, 10) * 1px)
+    calc(var(--top-right, 10) * 1px) 
+    calc(var(--bottom-right, 10) * 1px)
+    calc(var(--bottom-left, 10) * 1px);
+    box-shadow: 
+        calc(var(--x-position, 3) * 1px)
+        calc(var(--y-position, 3) * 1px)
+        calc(var(--blur, 0) * 1px)
+        calc(var(--spread, 1) * 1px)
+        var(--shadow-color, #000 );
+    transition: .4s ease;
+}
+
+#submit {
+    background: white;
+    border: 1px solid rgb(86, 86, 196);
+    color: rgb(36, 100, 248);
+    font-family: 'Spartan' ;
+    height: 2.5rem;
+    width: 40%;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 0.4rem;
+}
+
+input:not([type="color"]) {
+    padding: .25em .5em;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid transparent;
+    border-radius: .4em;
+}
+
+input:not([type="color"]):focus{
+    border-color: #0AF;
+}
+
+input[type="color"] {
+    width: 100%;
+    border-radius: .3em;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.created-by {
+    margin-top: auto;
+}
